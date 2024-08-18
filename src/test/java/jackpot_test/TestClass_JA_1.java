@@ -44,6 +44,7 @@ public class TestClass_JA_1 extends Base
 		logger.info("Test case Passed");
 		Reporter.log("Test Case passed");
 		
+		
 	}
 	
 
