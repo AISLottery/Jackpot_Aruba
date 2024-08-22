@@ -70,8 +70,6 @@
     <version>2.20.0</version>
 </dependency>
 
-	  
-		  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>

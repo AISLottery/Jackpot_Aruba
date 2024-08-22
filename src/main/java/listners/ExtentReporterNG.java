@@ -1,6 +1,6 @@
 package listners;
 
-import java.io.File;
+//import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -22,7 +22,7 @@ private ExtentReports extent;
 public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,String outputDirectory) {
 String timeStamp= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 
-extent = new ExtentReports(System.getProperty("user.dir")+"/REports/"+"Jacpot_Aruba"+timeStamp+".html", true);
+extent = new ExtentReports(System.getProperty("user.dir")+"/REports/"+"Jackpot_Aruba"+timeStamp+".html", true);
 
 for (ISuite suite : suites) 
 {

@@ -9,10 +9,13 @@ import org.openqa.selenium.io.FileHandler;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 
 import com.github.javafaker.Faker;
@@ -52,7 +55,7 @@ public class Utility extends Base
 		Reporter.log("Taking ScreenShot",true);
 		String timeStamp=new SimpleDateFormat("dd.MM.yyyy.HH.mm.ss").format(new Date());
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest=new File("C:\\Users\\vijay\\Desktop\\Class Notes\\Practice Work\\ATS"+TCID+"_"+timeStamp+".png");
+		File dest=new File("E:\\TestScreenShot\\"+TCID+"_"+timeStamp+".png");
 		Reporter.log("Saved ScreenShot at"+dest,true);
 		FileHandler.copy(src, dest);
 		
@@ -63,7 +66,7 @@ public class Utility extends Base
 		Properties prop=new Properties();
 		Thread.sleep(1000);
 		
-		FileInputStream myFile=new FileInputStream(System.getProperty("user.dir")+"\\ATSData.Properties");
+		FileInputStream myFile=new FileInputStream(System.getProperty("user.dir")+"\\TestData.properties");
 		prop.load(myFile);
 		Thread.sleep(1000);
 		
@@ -121,7 +124,7 @@ public class Utility extends Base
 	public static String phone()
 	{
 		Faker faker=new Faker();
-		String Landline=faker.phoneNumber().subscriberNumber(10);
+		String Landline=faker.phoneNumber().phoneNumber();
 		return Landline;
 	}
 	
@@ -177,13 +180,28 @@ public class Utility extends Base
 	public static String password()
 	{
 		Faker faker=new Faker();
-		passwd=faker.internet().password(6,7,true,true);
+		passwd=faker.internet().password(10,12,true,true,true);
 		return passwd;
 	}
 	public static String confirm_Password()
 	{
 		return passwd;
 	}
+	
+	public static String indianMobileNumber()
+	{
+		Faker faker=new Faker();
+		String startDigit = faker.number().numberBetween(7, 10) + "";	
+		String remainingDigits = faker.number().digits(9);
+		return startDigit + remainingDigits;
+	}
+	
+	public static void handle_Alert(WebDriver driver)
+	{
+		Alert alt = driver.switchTo().alert();
+		alt.dismiss();
+	}
+	
 	
 	
 	

@@ -1,8 +1,13 @@
 package base;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Reporter;
+
+import jackpot_Utility.Utility;
 
 
 
@@ -11,13 +16,14 @@ public class Base
 	static protected WebDriver driver;
 	//open browser
 	
-	public void launchJackpot() throws InterruptedException
+	public void launchJackpot() throws InterruptedException, IOException
 	{
+		
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		Reporter.log("Launching Browser",true);
 	
-		driver.get("https://pmlotterysoftware.aistechnolabs.pro/");
+		driver.get(Utility.propertyFileData("URL"));
 		Thread.sleep(2000);
 	}
 	
@@ -27,7 +33,7 @@ public class Base
 	{
 		Reporter.log("Closing the browser",true);
 		Thread.sleep(1000);
-		driver.close();
+		driver.quit();
 	}
 
 }

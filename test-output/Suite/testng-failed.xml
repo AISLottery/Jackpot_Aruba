@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listners.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" parallel="methods" name="Test(failed)">
+    <classes>
+      <class name="jackpot_test.TestClass_JA_1">
+        <methods>
+          <include name="afterTest"/>
+          <include name="SignInTest_and_Purchase_ticket"/>
+          <include name="startProcess"/>
+          <include name="startLogger"/>
+          <include name="register_New_User"/>
+        </methods>
+      </class> <!-- jackpot_test.TestClass_JA_1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
