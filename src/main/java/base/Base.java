@@ -18,12 +18,23 @@ public class Base
 	
 	public void launchJackpot() throws InterruptedException, IOException
 	{
-		
-		driver=new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--incognito");
+		driver=new ChromeDriver(options);
 		driver.manage().window().maximize();
 		Reporter.log("Launching Browser",true);
 	
 		driver.get(Utility.propertyFileData("URL"));
+		Thread.sleep(2000);
+	}
+	
+	public void launchJackpotAdmin() throws InterruptedException, IOException
+	{
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		Reporter.log("Launching Browser",true);
+	
+		driver.get(Utility.propertyFileData("AdminURL"));
 		Thread.sleep(2000);
 	}
 	

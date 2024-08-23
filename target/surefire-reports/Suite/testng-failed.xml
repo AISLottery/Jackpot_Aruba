@@ -6,14 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="jackpot_test.TestClass_JA_2">
+      <class name="jackpot_test.TestClass_JA_1">
         <methods>
-          <include name="Add_Credit"/>
+          <include name="afterTest"/>
+          <include name="SignInTest_and_Purchase_ticket"/>
           <include name="startProcess"/>
           <include name="startLogger"/>
-          <include name="afterTest"/>
         </methods>
-      </class> <!-- jackpot_test.TestClass_JA_2 -->
+      </class> <!-- jackpot_test.TestClass_JA_1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 22 12:53:59 IST 2024</td>
+<td>Started on:</td><td>Fri Aug 23 10:57:49 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>144 seconds (144924 ms)</td>
+<tr><td>Total time:</td><td>260 seconds (260705 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,24 +76,26 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='jackpot_test.TestClass_JA_2.Add_Credit()'><b>Add_Credit</b><br>Test class: jackpot_test.TestClass_JA_2<br/>
-<a href="#Output-859617558" onClick='toggleBox("Output-859617558", this, "Show output", "Hide output");'>Show output</a>
+<td title='jackpot_test.TestClass_JA_1.SignInTest_and_Purchase_ticket()'><b>SignInTest_and_Purchase_ticket</b><br>Test class: jackpot_test.TestClass_JA_1<br/>
+<a href="#Output-1693394713" onClick='toggleBox("Output-1693394713", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-859617558" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-859617558">
+<a href="#Output-1693394713" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1693394713">
+Random Number Clicked<br/>
+Ticket Added to Cart<br/>
 Taking ScreenShot<br/>
-Saved ScreenShot atE:\TestScreenShot\Add_Credit_22.08.2024.12.56.19.png<br/>
+Saved ScreenShot atE:\TestScreenShot\SignInTest_and_Purchase_ticket_23.08.2024.10.59.04.png<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;login-form__title fs-10xl fw-700 mb-1 text-success&apos; and (contains(text(),&apos;Success&apos;))]&quot;}
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;Toastify__toast-body&apos;]/div[2]&quot;}
   (Session info: chrome=127.0.6533.120)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [329eb39f38acf273d75503a38ac5d8eb, findElement {using=xpath, value=//*[@class=&apos;login-form__title fs-10xl fw-700 mb-1 text-success&apos; and (contains(text(),&apos;Success&apos;))]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50159}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50159/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 329eb39f38acf273d75503a38ac5d8eb
+Command: [b958551ac48a6b2570e9621fc84a2f89, findElement {using=xpath, value=//*[@class=&apos;Toastify__toast-body&apos;]/div[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49906}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49906/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b958551ac48a6b2570e9621fc84a2f89
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -108,19 +110,19 @@ Session ID: 329eb39f38acf273d75503a38ac5d8eb
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-	at jackpot_POM.Payment_Page.paySuccessVarification(Payment_Page.java:59)
-	at jackpot_test.TestClass_JA_2.Add_Credit(TestClass_JA_2.java:86)
+	at jackpot_POM.Home_Page.ticketConfirmMessage(Home_Page.java:135)
+	at jackpot_test.TestClass_JA_1.SignInTest_and_Purchase_ticket(TestClass_JA_1.java:91)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace859617558", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace859617558'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;login-form__title fs-10xl fw-700 mb-1 text-success&apos; and (contains(text(),&apos;Success&apos;))]&quot;}
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1693394713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1693394713'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;Toastify__toast-body&apos;]/div[2]&quot;}
   (Session info: chrome=127.0.6533.120)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [329eb39f38acf273d75503a38ac5d8eb, findElement {using=xpath, value=//*[@class=&apos;login-form__title fs-10xl fw-700 mb-1 text-success&apos; and (contains(text(),&apos;Success&apos;))]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50159}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50159/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 329eb39f38acf273d75503a38ac5d8eb
+Command: [b958551ac48a6b2570e9621fc84a2f89, findElement {using=xpath, value=//*[@class=&apos;Toastify__toast-body&apos;]/div[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49906}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49906/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b958551ac48a6b2570e9621fc84a2f89
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -138,8 +140,8 @@ Session ID: 329eb39f38acf273d75503a38ac5d8eb
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-	at jackpot_POM.Payment_Page.paySuccessVarification(Payment_Page.java:59)
-	at jackpot_test.TestClass_JA_2.Add_Credit(TestClass_JA_2.java:86)
+	at jackpot_POM.Home_Page.ticketConfirmMessage(Home_Page.java:135)
+	at jackpot_test.TestClass_JA_1.SignInTest_and_Purchase_ticket(TestClass_JA_1.java:91)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -171,8 +173,8 @@ Session ID: 329eb39f38acf273d75503a38ac5d8eb
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>71</td>
-<td>jackpot_test.TestClass_JA_2@45efd90f</td></tr>
+<td>26</td>
+<td>jackpot_test.TestClass_JA_1@5038d0b5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -183,18 +185,59 @@ Session ID: 329eb39f38acf273d75503a38ac5d8eb
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='jackpot_test.TestClass_JA_1.SignInTest_and_Purchase_ticket()'><b>SignInTest_and_Purchase_ticket</b><br>Test class: jackpot_test.TestClass_JA_1<br/>
-<a href="#Output-1682619279" onClick='toggleBox("Output-1682619279", this, "Show output", "Hide output");'>Show output</a>
+<td title='jackpot_test.TestClass_JA_2.Add_Credit()'><b>Add_Credit</b><br>Test class: jackpot_test.TestClass_JA_2</td>
+<td></td>
+<td>71</td>
+<td>jackpot_test.TestClass_JA_2@383dc82c</td></tr>
+<tr>
+<td title='jackpot_test.TestClass_JA_Admin_1.AddPlayer_PlayerManagement()'><b>AddPlayer_PlayerManagement</b><br>Test class: jackpot_test.TestClass_JA_Admin_1<br/>
+<a href="#Output-530249538" onClick='toggleBox("Output-530249538", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1682619279" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1682619279">
-Random Number Clicked<br/>
-Ticket Added to Cart<br/>
+<a href="#Output-530249538" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-530249538">
+Clicked on Player Management<br/>
+Clicked on Add New Player<br/>
+Entered Player Name<br/>
+Entered User Email ID<br/>
+Entered User Mobile Number<br/>
+Enter User Password<br/>
+Entered Confirmed Password<br/>
+Clicked on Submit Button<br/>
+User Created Successfully<br/>
 </div>
 </td>
 <td></td>
-<td>26</td>
-<td>jackpot_test.TestClass_JA_1@6cc4cdb9</td></tr>
+<td>24</td>
+<td>jackpot_test.TestClass_JA_Admin_1@4a07d605</td></tr>
+<tr>
+<td title='jackpot_test.TestClass_JA_1.Register_New_User_Self()'><b>Register_New_User_Self</b><br>Test class: jackpot_test.TestClass_JA_1<br/>
+<a href="#Output-448945595" onClick='toggleBox("Output-448945595", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-448945595" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-448945595">
+Entered Full Name<br/>
+Entered CellPhone Number<br/>
+Entered EmailID<br/>
+Entered Password<br/>
+Clicked on Submit Button<br/>
+Country Selected Successfully<br/>
+Gender Selected Successfully<br/>
+Calender clicked Successfully<br/>
+Year clicked Successfully<br/>
+Date clicked Successfully<br/>
+Country Selected Successfully<br/>
+Clicked next Button Succcessfully<br/>
+User Redirected to Enter OTP Screen<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>jackpot_test.TestClass_JA_1@5038d0b5</td></tr>
+<tr>
+<td title='jackpot_test.TestClass_JA_Admin_1.Admin_SignIN()'><b>Admin_SignIN</b><br>Test class: jackpot_test.TestClass_JA_Admin_1</td>
+<td></td>
+<td>0</td>
+<td>jackpot_test.TestClass_JA_Admin_1@4a07d605</td></tr>
 </table><p>
 </body>
 </html>

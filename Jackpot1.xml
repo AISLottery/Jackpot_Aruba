@@ -8,6 +8,7 @@
     <classes>
       <class name="jackpot_test.TestClass_JA_1"/>
       <class name="jackpot_test.TestClass_JA_2"/>
+      <class name="jackpot_test.TestClass_JA_Admin_1"/>
     </classes>
   </test> <!-- Test -->
   

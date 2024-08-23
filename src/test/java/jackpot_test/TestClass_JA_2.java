@@ -78,15 +78,16 @@ public class TestClass_JA_2 extends Base
 		Utility.wait(1500);
 		paymentPage.enterCVV();
 		Utility.scrolling(0,400);
-		Utility.wait(1534);
+		Utility.wait(2500);
 		paymentPage.enterCardHolderName();
 		Utility.wait(1667);
 		paymentPage.clickPayButton();
-		Utility.wait(15000);
+		Utility.wait(12500);
 		String actualPaySuccess=paymentPage.paySuccessVarification();
 		String expectedPaySuccess="Success";
 		Assert.assertEquals(actualPaySuccess,expectedPaySuccess,"Deposit Success Message not Matched/Did not Appeared");
 		logger.info("Add Credit/Payment Successfully Done");
+		Utility.wait(2000);
 	}
 	
 	

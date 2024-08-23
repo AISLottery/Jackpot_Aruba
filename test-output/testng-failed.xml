@@ -8,6 +8,7 @@
           <include name="Add_Credit"/>
           <include name="startProcess"/>
           <include name="startLogger"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- jackpot_test.TestClass_JA_2 -->
     </classes>

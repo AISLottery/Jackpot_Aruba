@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="148.129" tests="2" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="262.629" tests="5" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\vinton\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\vinton\AppData\Local\Temp\surefire13989739736982261123\surefirebooter-20240822125355826_3.jar C:\Users\vinton\AppData\Local\Temp\surefire13989739736982261123 2024-08-22T12-53-55_366-jvmRun1 surefire-20240822125355826_1tmp surefire_0-20240822125355826_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\vinton\AppData\Local\Temp\surefire5364971050716684835\surefirebooter-20240823105746983_3.jar C:\Users\vinton\AppData\Local\Temp\surefire5364971050716684835 2024-08-23T10-57-46_678-jvmRun1 surefire-20240823105746983_1tmp surefire_0-20240823105746983_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\vinton\eclipse-workspace\Jackpot_Aruba\target\test-classes;C:\Users\vinton\eclipse-workspace\Jackpot_Aruba\target\classes;C:\Users\vinton\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\vinton\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\vinton\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\vinton\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\vinton\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\vinton\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\vinton\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\vinton\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\vinton\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\vinton\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\vinton\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\vinton\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\vinton\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\vinton\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\vinton\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\vinton\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\vinton\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\vinton\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\vinton\.m2\repository\ch\qos\logback\logback-classic\1.4.8\logback-classic-1.4.8.jar;C:\Users\vinton\.m2\repository\ch\qos\logback\logback-core\1.4.8\logback-core-1.4.8.jar;C:\Users\vinton\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\vinton\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.20.0\log4j-slf4j-impl-2.20.0.jar;C:\Users\vinton\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-java\4.23.0\selenium-java-4.23.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-api\4.23.0\selenium-api-4.23.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.23.0\selenium-chrome-driver-4.23.0.jar;C:\Users\vinton\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.23.0\selenium-chromium-driver-4.23.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-json\4.23.0\selenium-json-4.23.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.23.0\selenium-manager-4.23.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.23.0\selenium-devtools-v125-4.23.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.23.0\selenium-devtools-v126-4.23.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.23.0\selenium-devtools-v127-4.23.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.23.0\selenium-devtools-v85-4.23.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.23.0\selenium-edge-driver-4.23.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.23.0\selenium-firefox-driver-4.23.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-http\4.23.0\selenium-http-4.23.0.jar;C:\Users\vinton\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.23.0\selenium-ie-driver-4.23.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.23.0\selenium-remote-driver-4.23.0.jar;C:\Users\vinton\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\vinton\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\vinton\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\vinton\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\vinton\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\vinton\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\vinton\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\vinton\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\vinton\.m2\repository\io\opentelemetry\opentelemetry-api\1.40.0\opentelemetry-api-1.40.0.jar;C:\Users\vinton\.m2\repository\io\opentelemetry\opentelemetry-context\1.40.0\opentelemetry-context-1.40.0.jar;C:\Users\vinton\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.40.0\opentelemetry-exporter-logging-1.40.0.jar;C:\Users\vinton\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.40.0\opentelemetry-sdk-common-1.40.0.jar;C:\Users\vinton\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.40.0\opentelemetry-sdk-extension-autoconfigure-spi-1.40.0.jar;C:\Users\vinton\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.40.0\opentelemetry-sdk-extension-autoconfigure-1.40.0.jar;C:\Users\vinton\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.40.0-alpha\opentelemetry-api-incubator-1.40.0-alpha.jar;C:\Users\vinton\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.40.0\opentelemetry-sdk-trace-1.40.0.jar;C:\Users\vinton\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.40.0\opentelemetry-sdk-1.40.0.jar;C:\Users\vinton\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.40.0\opentelemetry-sdk-metrics-1.40.0.jar;C:\Users\vinton\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.40.0\opentelemetry-sdk-logs-1.40.0.jar;C:\Users\vinton\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-os\4.23.0\selenium-os-4.23.0.jar;C:\Users\vinton\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.23.0\selenium-safari-driver-4.23.0.jar;C:\Users\vinton\.m2\repository\org\seleniumhq\selenium\selenium-support\4.23.0\selenium-support-4.23.0.jar;C:\Users\vinton\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\vinton\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\vinton\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\vinton\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\vinton\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\vinton\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\vinton\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\vinton\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\vinton\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\vinton\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\vinton\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\vinton\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\vinton\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\vinton\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\vinton\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\vinton\AppData\Local\Temp\surefire13989739736982261123\surefirebooter-20240822125355826_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\vinton\AppData\Local\Temp\surefire5364971050716684835\surefirebooter-20240823105746983_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.1+8"/>
@@ -60,27 +60,36 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="SignInTest_and_Purchase_ticket" classname="jackpot_test.TestClass_JA_1" time="26.993">
-    <system-out><![CDATA[12:53:58.746 [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\vinton\eclipse-workspace\Jackpot_Aruba\Jackpot1.xml"
+  <testcase name="Register_New_User_Self" classname="jackpot_test.TestClass_JA_1" time="20.264">
+    <system-out><![CDATA[10:57:48.669 [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\vinton\eclipse-workspace\Jackpot_Aruba\Jackpot1.xml"
 Launching Browser
- INFO [main] (TestClass_JA_1.java:73)- SuccessFully Logged IN
-Random Number Clicked
-Ticket Added to Cart
- INFO [main] (TestClass_JA_1.java:85)- Ticket Added to Cart Successfully
- INFO [main] (TestClass_JA_1.java:102)- Ticket Purchase Successfully
+Entered Full Name
+Entered CellPhone Number
+Entered EmailID
+Entered Password
+Clicked on Submit Button
+Country Selected Successfully
+Gender Selected Successfully
+Calender clicked Successfully
+Year clicked Successfully
+Date clicked Successfully
+Country Selected Successfully
+Clicked next Button Succcessfully
+User Redirected to Enter OTP Screen
+ INFO [main] (TestClass_JA_1.java:149)- User Created SuccessFully
 ]]></system-out>
   </testcase>
-  <testcase name="Add_Credit" classname="jackpot_test.TestClass_JA_2" time="71.058">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;login-form__title fs-10xl fw-700 mb-1 text-success&apos; and (contains(text(),&apos;Success&apos;))]&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [329eb39f38acf273d75503a38ac5d8eb, findElement {using=xpath, value=//*[@class=&apos;login-form__title fs-10xl fw-700 mb-1 text-success&apos; and (contains(text(),&apos;Success&apos;))]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50159}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50159/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 329eb39f38acf273d75503a38ac5d8eb" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='login-form__title fs-10xl fw-700 mb-1 text-success' and (contains(text(),'Success'))]"}
+  <testcase name="SignInTest_and_Purchase_ticket" classname="jackpot_test.TestClass_JA_1" time="26.911">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;Toastify__toast-body&apos;]/div[2]&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [b958551ac48a6b2570e9621fc84a2f89, findElement {using=xpath, value=//*[@class=&apos;Toastify__toast-body&apos;]/div[2]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49906}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49906/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b958551ac48a6b2570e9621fc84a2f89" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='Toastify__toast-body']/div[2]"}
   (Session info: chrome=127.0.6533.120)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [329eb39f38acf273d75503a38ac5d8eb, findElement {using=xpath, value=//*[@class='login-form__title fs-10xl fw-700 mb-1 text-success' and (contains(text(),'Success'))]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50159}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50159/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 329eb39f38acf273d75503a38ac5d8eb
+Command: [b958551ac48a6b2570e9621fc84a2f89, findElement {using=xpath, value=//*[@class='Toastify__toast-body']/div[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49906}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49906/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b958551ac48a6b2570e9621fc84a2f89
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -98,8 +107,8 @@ Session ID: 329eb39f38acf273d75503a38ac5d8eb
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-	at jackpot_POM.Payment_Page.paySuccessVarification(Payment_Page.java:59)
-	at jackpot_test.TestClass_JA_2.Add_Credit(TestClass_JA_2.java:86)
+	at jackpot_POM.Home_Page.ticketConfirmMessage(Home_Page.java:135)
+	at jackpot_test.TestClass_JA_1.SignInTest_and_Purchase_ticket(TestClass_JA_1.java:91)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -133,6 +142,52 @@ Session ID: 329eb39f38acf273d75503a38ac5d8eb
 ]]></failure>
     <system-out><![CDATA[Closing the browser
 Launching Browser
+ INFO [main] (TestClass_JA_1.java:73)- SuccessFully Logged IN
+Random Number Clicked
+Ticket Added to Cart
+ INFO [main] (TestClass_JA_1.java:85)- Ticket Added to Cart Successfully
+]]></system-out>
+  </testcase>
+  <testcase name="Add_Credit" classname="jackpot_test.TestClass_JA_2" time="71.517">
+    <system-out><![CDATA[Taking ScreenShot
+Saved ScreenShot atE:\TestScreenShot\SignInTest_and_Purchase_ticket_23.08.2024.10.59.04.png
+Closing the browser
+Launching Browser
+ INFO [main] (TestClass_JA_2.java:89)- Add Credit/Payment Successfully Done
+]]></system-out>
+  </testcase>
+  <testcase name="AddPlayer_PlayerManagement" classname="jackpot_test.TestClass_JA_Admin_1" time="24.731">
+    <system-out><![CDATA[Closing the browser
+Launching Browser
+Admin Email ID is Entered
+Admin Password is Entered
+Clicked on View Password Toggle
+Clicked on Sign IN Button
+Check your saved password popUP not appeared
+Clicked on Player Management
+Clicked on Add New Player
+Entered Player Name
+Entered User Email ID
+Entered User Mobile Number
+Enter User Password
+Entered Confirmed Password
+Clicked on Submit Button
+ INFO [main] (TestClass_JA_Admin_1.java:96)- User Created Successfully
+User Created Successfully
+This is the name returned from the list:-- -
+This is the name which entered:-- Aron
+]]></system-out>
+  </testcase>
+  <testcase name="Admin_SignIN" classname="jackpot_test.TestClass_JA_Admin_1" time="0.001">
+    <system-out><![CDATA[Closing the browser
+Browser Closed
+Launching Browser
+Admin Email ID is Entered
+Admin Password is Entered
+Clicked on View Password Toggle
+Clicked on Sign IN Button
+Check your saved password popUP not appeared
+ INFO [main] (TestClass_JA_Admin_1.java:67)- Admin Logged in Successfully
 ]]></system-out>
   </testcase>
 </testsuite>

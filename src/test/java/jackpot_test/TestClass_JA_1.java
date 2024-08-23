@@ -45,7 +45,7 @@ public class TestClass_JA_1 extends Base
 
 	}
 	
-	@Test(enabled = false)
+	@Test()
 	public void SignInTest_and_Purchase_ticket() throws InterruptedException, IOException
 	{
 		homepage.loginClick();
@@ -103,7 +103,7 @@ public class TestClass_JA_1 extends Base
 	}
 	
 	@Test()
-	public void Register_New_User() throws InterruptedException 
+	public void Register_New_User_Self() throws InterruptedException 
 	{
 		homepage.registerUser();
 		Utility.wait(1500);
