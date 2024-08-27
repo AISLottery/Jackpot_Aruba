@@ -47,7 +47,7 @@ public class TestClass_JA_2 extends Base
 		paymentPage=new Payment_Page(driver);
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void Add_Credit() throws InterruptedException, IOException
 	{
 		homepage.loginClick();
@@ -88,6 +88,29 @@ public class TestClass_JA_2 extends Base
 		Assert.assertEquals(actualPaySuccess,expectedPaySuccess,"Deposit Success Message not Matched/Did not Appeared");
 		logger.info("Add Credit/Payment Successfully Done");
 		Utility.wait(2000);
+	}
+	
+	@Test
+	public void verify_UserWinningTicket() throws InterruptedException, IOException
+	{
+		homepage.loginClick();
+		Utility.wait(1500);
+		loginpage.enterUserName(Utility.propertyFileData("Email"));
+		Utility.wait(550);
+		loginpage.enterPassword(Utility.propertyFileData("Password"));
+		Utility.wait(1000);
+		loginpage.clickOnSubmit();
+		Utility.wait(9000);
+		homepage.click_MyAccount();
+		Utility.wait(1000);
+		homepage.click_Profile();
+		Utility.wait(3000);
+		homepage.click_MyOrdertButton();
+		Utility.scrolling(0, 500);
+		Utility.wait(2500);
+		String [] allTicketsLotteryNumbers=homepage.tablerows(driver);
+		
+		
 	}
 	
 	

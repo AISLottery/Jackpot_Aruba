@@ -5,7 +5,7 @@
     <classes>
       <class name="jackpot_test.TestClass_JA_2">
         <methods>
-          <include name="Add_Credit"/>
+          <include name="verify_UserWinningTicket"/>
           <include name="startProcess"/>
           <include name="startLogger"/>
           <include name="afterTest"/>

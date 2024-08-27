@@ -109,6 +109,10 @@ public class TestClass_JA_Admin_1 extends Base
 		 
 	}
 	
+	public void Ticket_Management_Verify_Tickets()
+	{
+		
+	}
 	
 	
 	@AfterMethod

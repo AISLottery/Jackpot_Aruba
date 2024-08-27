@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Launching Browser]]>
@@ -8,27 +8,27 @@
       <![CDATA[Closing the browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-08-23T10:05:05 IST" name="Default suite" finished-at="2024-08-23T10:06:38 IST" duration-ms="93076">
+  <suite started-at="2024-08-23T15:03:36 IST" name="Default suite" finished-at="2024-08-23T15:04:19 IST" duration-ms="42960">
     <groups>
     </groups>
-    <test started-at="2024-08-23T10:05:05 IST" name="Default test" finished-at="2024-08-23T10:06:38 IST" duration-ms="93076">
+    <test started-at="2024-08-23T15:03:36 IST" name="Default test" finished-at="2024-08-23T15:04:19 IST" duration-ms="42960">
       <class name="jackpot_test.TestClass_JA_2">
-        <test-method is-config="true" signature="startLogger()[pri:0, instance:jackpot_test.TestClass_JA_2@928763c]" started-at="2024-08-23T10:05:05 IST" name="startLogger" finished-at="2024-08-23T10:05:05 IST" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="startLogger()[pri:0, instance:jackpot_test.TestClass_JA_2@e25951c]" started-at="2024-08-23T15:03:37 IST" name="startLogger" finished-at="2024-08-23T15:03:37 IST" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startLogger -->
-        <test-method is-config="true" signature="startProcess()[pri:0, instance:jackpot_test.TestClass_JA_2@928763c]" started-at="2024-08-23T10:05:05 IST" name="startProcess" finished-at="2024-08-23T10:05:16 IST" duration-ms="10879" status="PASS">
+        <test-method is-config="true" signature="startProcess()[pri:0, instance:jackpot_test.TestClass_JA_2@e25951c]" started-at="2024-08-23T15:03:37 IST" name="startProcess" finished-at="2024-08-23T15:03:51 IST" duration-ms="14154" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launching Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- startProcess -->
-        <test-method signature="Add_Credit()[pri:0, instance:jackpot_test.TestClass_JA_2@928763c]" started-at="2024-08-23T10:05:16 IST" name="Add_Credit" finished-at="2024-08-23T10:06:34 IST" duration-ms="77554" status="PASS">
+        <test-method signature="verify_UserWinningTicket()[pri:0, instance:jackpot_test.TestClass_JA_2@e25951c]" started-at="2024-08-23T15:03:51 IST" name="verify_UserWinningTicket" finished-at="2024-08-23T15:04:15 IST" duration-ms="24220" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Add_Credit -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:jackpot_test.TestClass_JA_2@928763c]" started-at="2024-08-23T10:06:34 IST" name="afterTest" finished-at="2024-08-23T10:06:38 IST" duration-ms="4383" status="PASS">
+        </test-method> <!-- verify_UserWinningTicket -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:jackpot_test.TestClass_JA_2@e25951c]" started-at="2024-08-23T15:04:15 IST" name="afterTest" finished-at="2024-08-23T15:04:19 IST" duration-ms="4314" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing the browser]]>

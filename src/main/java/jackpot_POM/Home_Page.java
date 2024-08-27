@@ -1,4 +1,5 @@
 package jackpot_POM;
+import org.openqa.selenium.By;
 //import org.openqa.selenium.JavascriptExecutor;
 //import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -34,7 +35,8 @@ public class Home_Page
 	@FindBy(xpath = "(//*[@stroke='currentColor'])[3]")private WebElement cartButton;
 	@FindBy(xpath = "//*[@class='col-md-12']/button")private WebElement buyNowButton;
 	@FindBy(xpath = "//*[@class='Toastify__toast-body']/div[2]")private WebElement ticketPurchaseConfimrdToastMessage;
-	
+	@FindBy(xpath = "//*[@class='btn-primary-outline p-2 primary-bg white-color fs-lg text-center fw-500 rounded-pill w-100 border-0' and (contains(text(),'MY ORDERS'))]")private WebElement myordersButton;
+	@FindBy(xpath = "//*[@class='table mb-0']/tbody/tr")private WebElement totalRowsInTable;
 	public Home_Page(WebDriver driver)
 	{
 	PageFactory.initElements(driver,this);
@@ -134,6 +136,28 @@ public class Home_Page
 	{
 		String ticketSuccessMessage=ticketPurchaseConfimrdToastMessage.getText();
 		return ticketSuccessMessage;
+	}
+	
+	public void click_MyOrdertButton()
+	{
+		myordersButton.click();
+	}
+	public String[] tablerows(WebDriver driver)
+	{
+		int count=driver.findElements(By.xpath("//*[@class='table mb-0']/tbody/tr")).size();
+		String arr[]=new String[count+1];
+			for(int j=1;j<=count;j++)
+			{
+				String ticketValue = driver.findElement(By.xpath("//*[@class='table mb-0']/tbody/tr["+j+"]/td["+3+"]")).getText();
+				
+				arr[j]=ticketValue;
+				System.out.println(ticketValue);
+				
+			}
+			
+		
+		return arr;
+			
 	}
 
 }

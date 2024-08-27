@@ -39,7 +39,8 @@ public class Admin_dashBoard extends Base
 	@FindBy(id = "confirmPassword")private WebElement userconfirmPassword;
 	@FindBy(xpath = "//*[@type='submit']")private WebElement submitUserCreation;
 	@FindBy(xpath = "//*[@id='myTable']/tbody/tr[1]/td[2]")private WebElement verifyNewUserFromList;
-	
+	@FindBy(xpath = "//*[@class='pagination']/li[5]")private WebElement ticketfourthPage;
+	@FindBy(xpath = "//*[@class='pagination']/li[1]")private WebElement ticketList_Previousbutton;
 	public String fname;
 	
 	public Admin_dashBoard(WebDriver driver)
@@ -93,5 +94,20 @@ public class Admin_dashBoard extends Base
 		String actualName=verifyNewUserFromList.getText();
 		return actualName;
 	}
+	
+	public void click_TicketManagement()
+	{
+		ticketManagement.click();
+	}
+	
+	public void click_ticketListPage()
+	{
+		ticketfourthPage.click();
+	}
+	public void click_ticketListPreviousButton()
+	{
+		ticketList_Previousbutton.click();
+	}
+	
 
 }
