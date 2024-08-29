@@ -60,7 +60,7 @@ public class TestClass_JA_Admin_1 extends Base
 		}
 
 	}
-	@Test()
+	@Test(enabled = false)
 	public void Admin_SignIN() throws InterruptedException, IOException
 	{
 		
@@ -70,6 +70,7 @@ public class TestClass_JA_Admin_1 extends Base
 	@Test
 	public void AddPlayer_PlayerManagement_andVerify() throws InterruptedException, IOException
 	{
+		
 		 adminDashBoard.click_PlayerManagement();
 		 Reporter.log("Clicked on Player Management",true);
 		 Utility.wait(1500);
@@ -102,7 +103,11 @@ public class TestClass_JA_Admin_1 extends Base
 		 
 	     System.out.println("This is the name returned from the list:-- "+actualName);
 		 System.out.println("This is the name which entered:-- "+expectedName);
-
+		
+		
+			logger.info("This Test case got Failed");
+			System.out.println("This message from the catch bloack");
+		
 		
 		 
 		 

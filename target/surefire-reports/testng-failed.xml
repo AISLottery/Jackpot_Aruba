@@ -11,9 +11,30 @@
           <include name="afterTest"/>
           <include name="SignInTest_and_Purchase_ticket"/>
           <include name="startProcess"/>
+          <include name="Register_New_User_Self"/>
           <include name="startLogger"/>
         </methods>
       </class> <!-- jackpot_test.TestClass_JA_1 -->
+      <class name="jackpot_test.TestClass_JA_Admin_1">
+        <methods>
+          <include name="afterTest"/>
+          <include name="AddPlayer_PlayerManagement_andVerify"/>
+          <include name="startProcess"/>
+          <include name="startLogger"/>
+          <include name="Admin_SignIN"/>
+        </methods>
+      </class> <!-- jackpot_test.TestClass_JA_Admin_1 -->
+      <class name="jackpot_test.TestClass_JA_2">
+        <methods>
+          <include name="verify_UserWinningTicket"/>
+          <include name="Add_Credit"/>
+          <include name="startProcess"/>
+          <include name="startLogger"/>
+          <include name="User_Manage_Winnings_bankTransfer"/>
+          <include name="UserProfle_UpdatePassword"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- jackpot_test.TestClass_JA_2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

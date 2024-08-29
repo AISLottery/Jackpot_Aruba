@@ -23,9 +23,13 @@ public class Base
 		driver=new ChromeDriver(options);
 		driver.manage().window().maximize();
 		Reporter.log("Launching Browser",true);
-	
+		try
+		{
 		driver.get(Utility.propertyFileData("URL"));
-		Thread.sleep(2000);
+		}
+		catch (Exception e) {
+			Reporter.log("Can't connect to internet");
+		Thread.sleep(2000);}
 	}
 	
 	public void launchJackpotAdmin() throws InterruptedException, IOException

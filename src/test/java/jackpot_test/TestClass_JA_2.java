@@ -47,7 +47,7 @@ public class TestClass_JA_2 extends Base
 		paymentPage=new Payment_Page(driver);
 	}
 	
-	@Test(enabled = false)
+	@Test()
 	public void Add_Credit() throws InterruptedException, IOException
 	{
 		homepage.loginClick();
@@ -90,7 +90,7 @@ public class TestClass_JA_2 extends Base
 		Utility.wait(2000);
 	}
 	
-	@Test
+	@Test()
 	public void verify_UserWinningTicket() throws InterruptedException, IOException
 	{
 		homepage.loginClick();
@@ -111,6 +111,82 @@ public class TestClass_JA_2 extends Base
 		String [] allTicketsLotteryNumbers=homepage.tablerows(driver);
 		
 		
+	}
+	
+	@Test()
+	public void User_Manage_Winnings_bankTransfer() throws InterruptedException, IOException
+	{
+		homepage.loginClick();
+		Reporter.log("User clikec",true);
+		Utility.wait(1500);
+		loginpage.enterUserName(Utility.propertyFileData("Email"));
+		Reporter.log("User Entered UserEmail",true);
+		Utility.wait(550);
+		loginpage.enterPassword(Utility.propertyFileData("Password"));
+		Reporter.log("User Entered UserPassword",true);
+		Utility.wait(1000);
+		loginpage.clickOnSubmit();
+		Reporter.log("User Clicked on Submit",true);
+		Utility.wait(9000);
+		homepage.click_MyAccount();
+		Reporter.log("User Clicked on MyAccount",true);
+		Utility.wait(1000);
+		homepage.click_Profile();
+		Reporter.log("User Clicked on Profile",true);
+		Utility.wait(3000);
+		myProfile.click_Manage_winnnings(driver);
+		Reporter.log("User Clicked on Manage Winnnings",true);
+		Utility.wait(2000);
+		myProfile.click_Bank_transfer();
+		Reporter.log("User Clicked on Bank transfer",true);
+		Utility.wait(2000);
+		myProfile.enterAmount();
+		Reporter.log("User Entered Amount",true);
+		Utility.wait(1200);
+		myProfile.enterBankName();
+		Reporter.log("User Entered Bank Name",true);
+		Utility.wait(1200);
+		myProfile.enterAccountHolderName();
+		Reporter.log("User Entered Account Holder Name",true);
+		Utility.wait(1200);
+		myProfile.enterAccountNumber();
+		Reporter.log("User Entered Account Number",true);
+		Utility.wait(1200);
+		myProfile.enterRoutingNumber();
+		Reporter.log("User Entered Routing Number",true);
+		Utility.wait(2000);
+		myProfile.clickBankDetailSubmit(driver);
+		Reporter.log("User Clicked on Submit",true);
+		Utility.wait(1000);
+		String toasterMessage=myProfile.toasterStatus();
+		System.out.println(toasterMessage);
+		Reporter.log(toasterMessage);
+		logger.info(toasterMessage+"   withdraw from the account");
+		//logger.info(toasterMessage);
+
+	}
+	
+	@Test
+	public void UserProfle_UpdatePassword() throws InterruptedException, IOException
+	{
+		homepage.loginClick();
+		Reporter.log("User clikec",true);
+		Utility.wait(1500);
+		loginpage.enterUserName(Utility.propertyFileData("Email"));
+		Reporter.log("User Entered UserEmail",true);
+		Utility.wait(550);
+		loginpage.enterPassword(Utility.propertyFileData("Password"));
+		Reporter.log("User Entered UserPassword",true);
+		Utility.wait(1000);
+		loginpage.clickOnSubmit();
+		Reporter.log("User Clicked on Submit",true);
+		Utility.wait(9000);
+		homepage.click_MyAccount();
+		Reporter.log("User Clicked on MyAccount",true);
+		Utility.wait(1000);
+		homepage.click_Profile();
+		Reporter.log("User Clicked on Profile",true);
+		Utility.wait(3000);
 	}
 	
 	
