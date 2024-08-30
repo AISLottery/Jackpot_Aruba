@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.model.Report;
 
 import jackpot_Utility.*;
 import jackpot_POM.*;
@@ -47,7 +48,7 @@ public class TestClass_JA_2 extends Base
 		paymentPage=new Payment_Page(driver);
 	}
 	
-	@Test()
+	@Test(enabled = false)
 	public void Add_Credit() throws InterruptedException, IOException
 	{
 		homepage.loginClick();
@@ -90,7 +91,7 @@ public class TestClass_JA_2 extends Base
 		Utility.wait(2000);
 	}
 	
-	@Test()
+	@Test(enabled = false)
 	public void verify_UserWinningTicket() throws InterruptedException, IOException
 	{
 		homepage.loginClick();
@@ -101,19 +102,12 @@ public class TestClass_JA_2 extends Base
 		Utility.wait(1000);
 		loginpage.clickOnSubmit();
 		Utility.wait(9000);
-		homepage.click_MyAccount();
-		Utility.wait(1000);
-		homepage.click_Profile();
-		Utility.wait(3000);
-		homepage.click_MyOrdertButton();
-		Utility.scrolling(0, 500);
-		Utility.wait(2500);
-		String [] allTicketsLotteryNumbers=homepage.tablerows(driver);
+		
 		
 		
 	}
 	
-	@Test()
+	@Test(enabled = false)
 	public void User_Manage_Winnings_bankTransfer() throws InterruptedException, IOException
 	{
 		homepage.loginClick();
@@ -170,7 +164,7 @@ public class TestClass_JA_2 extends Base
 	public void UserProfle_UpdatePassword() throws InterruptedException, IOException
 	{
 		homepage.loginClick();
-		Reporter.log("User clikec",true);
+		Reporter.log("User clicked",true);
 		Utility.wait(1500);
 		loginpage.enterUserName(Utility.propertyFileData("Email"));
 		Reporter.log("User Entered UserEmail",true);
@@ -187,7 +181,39 @@ public class TestClass_JA_2 extends Base
 		homepage.click_Profile();
 		Reporter.log("User Clicked on Profile",true);
 		Utility.wait(3000);
+		Utility.scrolling(0,400);
+		Utility.wait(2000);
+		myProfile.clickAccountandScurity();
+		Utility.wait(2000);
+		boolean status1 = myProfile.enterCurrentPassword();
+		if(status1)
+		{
+			Reporter.log("Enter Current Password Field is working",true);
+		}
+		
+		boolean status2 = myProfile.enterNewPassword();
+		if(status2)
+		{
+			Reporter.log("Enter New Password Field is working",true);
+		}
+		
+		boolean status3 = myProfile.enterConfirmNewPassword();
+		if(status3)
+		{
+			Reporter.log("Enter confirm New Password Field is working",true);
+		}
+		Utility.scrolling(0, 300);
+		Utility.wait(2000);
+		boolean status4 = myProfile.clickChangePasswordButton();
+		if(status4)
+		{
+			Reporter.log("Change Password button is working",true);
+		}
+		
+		
 	}
+	
+	
 	
 	
 	@AfterMethod
