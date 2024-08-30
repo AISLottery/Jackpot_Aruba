@@ -36,7 +36,7 @@ public class MyProfile_Page
 @FindBy(id = "confirmNewPassword")private WebElement confirmPassword;
 @FindBy(xpath = "//*[@type='submit' and (contains(text(),'CHANGE PASSWORD'))]")private WebElement changePasswordButton;
 @FindBy(xpath = "//*[@class='btn-w mt-3 mt-md-4']/button[(contains(text(),'DELETE ACCOUNT'))]")private WebElement deleteAccountButton;
-
+@FindBy(xpath = "//*[@class='Toastify__toast-body']/div[2][(contains(text(),'Password changed successfully'))]")private WebElement passwordToastMessage;
 
 public MyProfile_Page(WebDriver driver)
 {
@@ -116,4 +116,33 @@ public String toasterStatus()
 	return toastMessage;
 }
 
+public void clickAccountandScurity()
+{
+	accountAndSecurity.click();
+}
+
+public boolean enterCurrentPassword() 
+{
+	boolean currentPasswordStatus = currentPassword.isEnabled();
+	return currentPasswordStatus;
+}
+
+public boolean enterNewPassword() 
+{
+	boolean newPasswordStatus = newPassword.isEnabled();
+	return newPasswordStatus;
+}
+
+public boolean enterConfirmNewPassword() 
+{
+	boolean confirmNewPasswordStatus = confirmPassword.isEnabled();
+	return confirmNewPasswordStatus;
+}
+
+public boolean clickChangePasswordButton()
+{
+	boolean changePasswordButtonStatus=changePasswordButton.isEnabled();
+	return changePasswordButtonStatus;
+
+}
 }

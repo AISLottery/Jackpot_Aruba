@@ -1,71 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Launching Browser]]>
     </line>
     <line>
-      <![CDATA[Clicked on Pick3 Lottery]]>
+      <![CDATA[User clicked]]>
     </line>
     <line>
-      <![CDATA[Random Number Clicked]]>
+      <![CDATA[User Entered UserEmail]]>
     </line>
     <line>
-      <![CDATA[Clicked on add to cart]]>
+      <![CDATA[User Entered UserPassword]]>
     </line>
     <line>
-      <![CDATA[Ticket Added to Cart]]>
+      <![CDATA[User Clicked on Submit]]>
     </line>
     <line>
-      <![CDATA[Cicked Cart Button]]>
+      <![CDATA[User Clicked on MyAccount]]>
+    </line>
+    <line>
+      <![CDATA[User Clicked on Profile]]>
+    </line>
+    <line>
+      <![CDATA[Enter Current Password Field is working]]>
+    </line>
+    <line>
+      <![CDATA[Enter New Password Field is working]]>
+    </line>
+    <line>
+      <![CDATA[Enter confirm New Password Field is working]]>
+    </line>
+    <line>
+      <![CDATA[Change Password button is working]]>
     </line>
     <line>
       <![CDATA[Closing the browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-08-29T18:53:33 IST" name="Default suite" finished-at="2024-08-29T18:54:16 IST" duration-ms="42672">
+  <suite started-at="2024-08-30T17:32:42 IST" name="Default suite" finished-at="2024-08-30T17:33:27 IST" duration-ms="45290">
     <groups>
     </groups>
-    <test started-at="2024-08-29T18:53:33 IST" name="Default test" finished-at="2024-08-29T18:54:16 IST" duration-ms="42672">
-      <class name="jackpot_test.TestClass_JA_1">
-        <test-method is-config="true" signature="startLogger()[pri:0, instance:jackpot_test.TestClass_JA_1@e25951c]" started-at="2024-08-29T18:53:33 IST" name="startLogger" finished-at="2024-08-29T18:53:34 IST" duration-ms="194" status="PASS">
+    <test started-at="2024-08-30T17:32:42 IST" name="Default test" finished-at="2024-08-30T17:33:27 IST" duration-ms="45290">
+      <class name="jackpot_test.TestClass_JA_2">
+        <test-method is-config="true" signature="startLogger()[pri:0, instance:jackpot_test.TestClass_JA_2@471a9022]" started-at="2024-08-30T17:32:42 IST" name="startLogger" finished-at="2024-08-30T17:32:42 IST" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startLogger -->
-        <test-method is-config="true" signature="startProcess()[pri:0, instance:jackpot_test.TestClass_JA_1@e25951c]" started-at="2024-08-29T18:53:34 IST" name="startProcess" finished-at="2024-08-29T18:53:42 IST" duration-ms="8875" status="PASS">
+        <test-method is-config="true" signature="startProcess()[pri:0, instance:jackpot_test.TestClass_JA_2@471a9022]" started-at="2024-08-30T17:32:42 IST" name="startProcess" finished-at="2024-08-30T17:32:56 IST" duration-ms="13179" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launching Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- startProcess -->
-        <test-method signature="SignInTest_and_Purchase_ticket()[pri:0, instance:jackpot_test.TestClass_JA_1@e25951c]" started-at="2024-08-29T18:53:42 IST" name="SignInTest_and_Purchase_ticket" finished-at="2024-08-29T18:54:12 IST" duration-ms="29182" status="PASS">
+        <test-method signature="UserProfle_UpdatePassword()[pri:0, instance:jackpot_test.TestClass_JA_2@471a9022]" started-at="2024-08-30T17:32:56 IST" name="UserProfle_UpdatePassword" finished-at="2024-08-30T17:33:23 IST" duration-ms="27514" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Clicked on Pick3 Lottery]]>
+              <![CDATA[User clicked]]>
             </line>
             <line>
-              <![CDATA[Random Number Clicked]]>
+              <![CDATA[User Entered UserEmail]]>
             </line>
             <line>
-              <![CDATA[Clicked on add to cart]]>
+              <![CDATA[User Entered UserPassword]]>
             </line>
             <line>
-              <![CDATA[Ticket Added to Cart]]>
+              <![CDATA[User Clicked on Submit]]>
             </line>
             <line>
-              <![CDATA[Cicked Cart Button]]>
+              <![CDATA[User Clicked on MyAccount]]>
+            </line>
+            <line>
+              <![CDATA[User Clicked on Profile]]>
+            </line>
+            <line>
+              <![CDATA[Enter Current Password Field is working]]>
+            </line>
+            <line>
+              <![CDATA[Enter New Password Field is working]]>
+            </line>
+            <line>
+              <![CDATA[Enter confirm New Password Field is working]]>
+            </line>
+            <line>
+              <![CDATA[Change Password button is working]]>
             </line>
           </reporter-output>
-        </test-method> <!-- SignInTest_and_Purchase_ticket -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:jackpot_test.TestClass_JA_1@e25951c]" started-at="2024-08-29T18:54:12 IST" name="afterTest" finished-at="2024-08-29T18:54:16 IST" duration-ms="4329" status="PASS">
+        </test-method> <!-- UserProfle_UpdatePassword -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:jackpot_test.TestClass_JA_2@471a9022]" started-at="2024-08-30T17:33:23 IST" name="afterTest" finished-at="2024-08-30T17:33:27 IST" duration-ms="4343" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing the browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- jackpot_test.TestClass_JA_1 -->
+      </class> <!-- jackpot_test.TestClass_JA_2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
