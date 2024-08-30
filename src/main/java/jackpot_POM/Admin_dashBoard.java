@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import base.Base;
 import jackpot_Utility.Utility;
@@ -32,7 +33,7 @@ public class Admin_dashBoard extends Base
 	@FindBy(xpath = "//*[@name='myTable_length']")private WebElement showEntriesPlayerManagement;
 	@FindBy(id = "myTable_info")private WebElement totalNumerOfPlayersfromList;
 	@FindBy(xpath = "//*[@class='col-sm-12 col-md-5']/div")private WebElement totalNumberOfSoldTicketsFromList;
-	@FindBy(id = "username")private WebElement playerName;
+	@FindBy(id = "full_name")private WebElement playerName;
 	@FindBy(id = "email")private WebElement userEmailAddress;
 	@FindBy(id = "mobile")private WebElement userMobileNumber;
 	@FindBy(id = "password")private WebElement userpassword;
@@ -41,6 +42,8 @@ public class Admin_dashBoard extends Base
 	@FindBy(xpath = "//*[@id='myTable']/tbody/tr[1]/td[2]")private WebElement verifyNewUserFromList;
 	@FindBy(xpath = "//*[@class='pagination']/li[5]")private WebElement ticketfourthPage;
 	@FindBy(xpath = "//*[@class='pagination']/li[1]")private WebElement ticketList_Previousbutton;
+	@FindBy(id = "countryCode")private WebElement countryCode;
+	
 	public String fname;
 	
 	public Admin_dashBoard(WebDriver driver)
@@ -109,5 +112,10 @@ public class Admin_dashBoard extends Base
 		ticketList_Previousbutton.click();
 	}
 	
+	public void enter_CountryCode()
+	{
+		Select s=new Select(countryCode);
+		s.selectByValue("+91");
+	}
 
 }

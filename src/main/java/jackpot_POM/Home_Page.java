@@ -8,12 +8,14 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import jackpot_Utility.Utility;
+
 //import jackpot_Utility.Utility;
 
 
 public class Home_Page
 {
-	@FindBy(xpath = "//*[@id='v-pills-pick3-tab']")private WebElement pick3selector;
+	@FindBy(id = "v-pills-pick3-tab")private WebElement pick3selector;
 	@FindBy(id = "v-pills-pick4-tab")private WebElement pick4selector;
 	@FindBy(id = "v-pills-pick5-tab")private WebElement pick5selector;
 	@FindBy(xpath = "(//*[@href='/live-stream'])[5]")private WebElement liveDrawselector;
@@ -33,7 +35,7 @@ public class Home_Page
 	@FindBy(xpath = "//*[@class='btn py-0 nav-link dropdown-toggle' and (contains(text(),'My Account'))]")private WebElement myAccountButton;
 	@FindBy(xpath = "(//*[@href='/account/profile' and (contains(text(),'Profile'))])[1]")private WebElement profiledropDown;
 	@FindBy(xpath = "(//*[@stroke='currentColor'])[3]")private WebElement cartButton;
-	@FindBy(xpath = "//*[@class='col-md-12']/button")private WebElement buyNowButton;
+	@FindBy(xpath = "//*[@class='btn-primary-outline p-3 primary-bg white-color mx-0 mt-1 mb-0 fs-2xl text-center fw-700 rounded-pill w-100' and (contains(text(),'Buy Now'))]")private WebElement buyNowButton;
 	@FindBy(xpath = "//*[@class='Toastify__toast-body']/div[2]")private WebElement ticketPurchaseConfimrdToastMessage;
 	@FindBy(xpath = "//*[@class='btn-primary-outline p-2 primary-bg white-color fs-lg text-center fw-500 rounded-pill w-100 border-0' and (contains(text(),'MY ORDERS'))]")private WebElement myordersButton;
 	@FindBy(xpath = "//*[@class='table mb-0']/tbody/tr")private WebElement totalRowsInTable;
@@ -127,8 +129,10 @@ public class Home_Page
 		cartButton.click();
 	}
 	
-	public void click_buyNowButton()
+	public void click_buyNowButton() throws InterruptedException
 	{
+		Utility.scrolling(0,100);
+		Utility.wait(2000);
 		buyNowButton.click();
 	}
 	

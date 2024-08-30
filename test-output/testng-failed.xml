@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="jackpot_test.TestClass_JA_Admin_1">
+      <class name="jackpot_test.TestClass_JA_1">
         <methods>
           <include name="afterTest"/>
-          <include name="AddPlayer_PlayerManagement_andVerify"/>
+          <include name="SignInTest_and_Purchase_ticket"/>
           <include name="startProcess"/>
           <include name="startLogger"/>
         </methods>
-      </class> <!-- jackpot_test.TestClass_JA_Admin_1 -->
+      </class> <!-- jackpot_test.TestClass_JA_1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -60,7 +60,7 @@ public class TestClass_JA_Admin_1 extends Base
 		}
 
 	}
-	@Test(enabled = false)
+	@Test()
 	public void Admin_SignIN() throws InterruptedException, IOException
 	{
 		
@@ -83,6 +83,8 @@ public class TestClass_JA_Admin_1 extends Base
 		 adminDashBoard.enter_EmailAddress();
 		 Reporter.log("Entered User Email ID",true);
 		 Utility.wait(1000);
+		 adminDashBoard.enter_CountryCode();
+		 Utility.wait(1500);
 		 adminDashBoard.enter_MobileNumber();
 		 Reporter.log("Entered User Mobile Number",true);
 		 Utility.wait(1000);
@@ -103,10 +105,12 @@ public class TestClass_JA_Admin_1 extends Base
 		 
 	     System.out.println("This is the name returned from the list:-- "+actualName);
 		 System.out.println("This is the name which entered:-- "+expectedName);
+		 
+		 Assert.assertEquals(actualName,expectedName,"Couldn't matched the Name for Newly created user");
+		 logger.info("New User Added successfully"+actualName);
 		
-		
-			logger.info("This Test case got Failed");
-			System.out.println("This message from the catch bloack");
+//			logger.info("This Test case got Failed");
+//			System.out.println("This message from the catch bloack");
 		
 		
 		 
@@ -114,6 +118,7 @@ public class TestClass_JA_Admin_1 extends Base
 		 
 	}
 	
+	@Test()
 	public void Ticket_Management_Verify_Tickets()
 	{
 		

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 29 16:15:14 IST 2024</td>
+<td>Started on:</td><td>Thu Aug 29 19:17:59 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>278 seconds (278999 ms)</td>
+<tr><td>Total time:</td><td>389 seconds (389767 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,72 +76,26 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='jackpot_test.TestClass_JA_Admin_1.AddPlayer_PlayerManagement_andVerify()'><b>AddPlayer_PlayerManagement_andVerify</b><br>Test class: jackpot_test.TestClass_JA_Admin_1<br/>
-<a href="#Output-1605734165" onClick='toggleBox("Output-1605734165", this, "Show output", "Hide output");'>Show output</a>
+<td title='jackpot_test.TestClass_JA_1.SignInTest_and_Purchase_ticket()'><b>SignInTest_and_Purchase_ticket</b><br>Test class: jackpot_test.TestClass_JA_1<br/>
+<a href="#Output-1871846962" onClick='toggleBox("Output-1871846962", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1605734165" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1605734165">
-Clicked on Player Management<br/>
-Clicked on Add New Player<br/>
+<a href="#Output-1871846962" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1871846962">
 Taking ScreenShot<br/>
-Saved ScreenShot atE:\TestScreenShot\AddPlayer_PlayerManagement_andVerify_29.08.2024.16.19.48.png<br/>
+Saved ScreenShot atE:\TestScreenShot\SignInTest_and_Purchase_ticket_29.08.2024.19.19.18.png<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#username&quot;}
-  (Session info: chrome=128.0.6613.113)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3ce355df759084962b52251214729119, findElement {value=username, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57296/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3ce355df759084962b52251214729119
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-	at jackpot_POM.Admin_dashBoard.enter_PlayerName(Admin_dashBoard.java:64)
-	at jackpot_test.TestClass_JA_Admin_1.AddPlayer_PlayerManagement_andVerify(TestClass_JA_Admin_1.java:80)
+<td><div><pre>java.lang.AssertionError: Values are not Matched!!!! TC Failed expected [You are successfully login!] but found []
+	at jackpot_test.TestClass_JA_1.SignInTest_and_Purchase_ticket(TestClass_JA_1.java:72)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1605734165", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1605734165'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#username&quot;}
-  (Session info: chrome=128.0.6613.113)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3ce355df759084962b52251214729119, findElement {value=username, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57296/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3ce355df759084962b52251214729119
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-	at jackpot_POM.Admin_dashBoard.enter_PlayerName(Admin_dashBoard.java:64)
-	at jackpot_test.TestClass_JA_Admin_1.AddPlayer_PlayerManagement_andVerify(TestClass_JA_Admin_1.java:80)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1871846962", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1871846962'><pre>java.lang.AssertionError: Values are not Matched!!!! TC Failed expected [You are successfully login!] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at jackpot_test.TestClass_JA_1.SignInTest_and_Purchase_ticket(TestClass_JA_1.java:72)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -173,14 +127,14 @@ Session ID: 3ce355df759084962b52251214729119
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>4</td>
-<td>jackpot_test.TestClass_JA_Admin_1@5f9edf14</td></tr>
+<td>12</td>
+<td>jackpot_test.TestClass_JA_1@7d9f158f</td></tr>
 <tr>
 <td title='jackpot_test.TestClass_JA_2.User_Manage_Winnings_bankTransfer()'><b>User_Manage_Winnings_bankTransfer</b><br>Test class: jackpot_test.TestClass_JA_2<br/>
-<a href="#Output-770272954" onClick='toggleBox("Output-770272954", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1936689207" onClick='toggleBox("Output-1936689207", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-770272954" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-770272954">
+<a href="#Output-1936689207" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1936689207">
 User clikec<br/>
 User Entered UserEmail<br/>
 User Entered UserPassword<br/>
@@ -196,7 +150,7 @@ User Entered Account Number<br/>
 User Entered Routing Number<br/>
 User Clicked on Submit<br/>
 Taking ScreenShot<br/>
-Saved ScreenShot atE:\TestScreenShot\User_Manage_Winnings_bankTransfer_29.08.2024.16.18.28.png<br/>
+Saved ScreenShot atE:\TestScreenShot\User_Manage_Winnings_bankTransfer_29.08.2024.19.21.37.png<br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;Toastify__toast-container Toastify__toast-container--top-right&apos;]/div/div/div[2]&quot;}
@@ -205,9 +159,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [96653171d12a1fe9997e9d67bdfdce43, findElement {value=//*[@class=&apos;Toastify__toast-container Toastify__toast-container--top-right&apos;]/div/div/div[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62027}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62027/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 96653171d12a1fe9997e9d67bdfdce43
+Command: [301bf1a10b568ed2c32257fe349a8e51, findElement {value=//*[@class=&apos;Toastify__toast-container Toastify__toast-container--top-right&apos;]/div/div/div[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53038}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53038/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 301bf1a10b568ed2c32257fe349a8e51
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -225,16 +179,16 @@ Session ID: 96653171d12a1fe9997e9d67bdfdce43
 	at jackpot_POM.MyProfile_Page.toasterStatus(MyProfile_Page.java:115)
 	at jackpot_test.TestClass_JA_2.User_Manage_Winnings_bankTransfer(TestClass_JA_2.java:161)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace770272954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace770272954'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;Toastify__toast-container Toastify__toast-container--top-right&apos;]/div/div/div[2]&quot;}
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1936689207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1936689207'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;Toastify__toast-container Toastify__toast-container--top-right&apos;]/div/div/div[2]&quot;}
   (Session info: chrome=128.0.6613.113)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [96653171d12a1fe9997e9d67bdfdce43, findElement {value=//*[@class=&apos;Toastify__toast-container Toastify__toast-container--top-right&apos;]/div/div/div[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62027}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62027/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 96653171d12a1fe9997e9d67bdfdce43
+Command: [301bf1a10b568ed2c32257fe349a8e51, findElement {value=//*[@class=&apos;Toastify__toast-container Toastify__toast-container--top-right&apos;]/div/div/div[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53038}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53038/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 301bf1a10b568ed2c32257fe349a8e51
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -288,116 +242,22 @@ Session ID: 96653171d12a1fe9997e9d67bdfdce43
 <td>50</td>
 <td>jackpot_test.TestClass_JA_2@2bdd8394</td></tr>
 <tr>
-<td title='jackpot_test.TestClass_JA_1.SignInTest_and_Purchase_ticket()'><b>SignInTest_and_Purchase_ticket</b><br>Test class: jackpot_test.TestClass_JA_1<br/>
-<a href="#Output-1057175140" onClick='toggleBox("Output-1057175140", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1057175140" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1057175140">
-Taking ScreenShot<br/>
-Saved ScreenShot atE:\TestScreenShot\SignInTest_and_Purchase_ticket_29.08.2024.16.16.15.png<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p class=&quot;purple-color&quot; role=&quot;button&quot;&gt;...&lt;/p&gt; is not clickable at point (885, 372). Other element would receive the click: &lt;div class=&quot;tab-pane fade show active pick-tabbing-page&quot; id=&quot;v-pills-pick3&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-pick3-tab&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=128.0.6613.113)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d1a6d9f34656b761592b4abbe0e44744, clickElement {id=f.70F8F78ED98221B955322633A32F9A23.d.895F8B4674207DC8FF02C6369DB405AE.e.51}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61883/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d1a6d9f34656b761592b4abbe0e44744)] -&gt; xpath: (//*[@class=&apos;purple-color&apos; and @role=&apos;button&apos;])[1]]
-Session ID: d1a6d9f34656b761592b4abbe0e44744
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at jackpot_POM.Home_Page.randomNumberfromTkt1(Home_Page.java:80)
-	at jackpot_test.TestClass_JA_1.SignInTest_and_Purchase_ticket(TestClass_JA_1.java:76)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1057175140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1057175140'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p class=&quot;purple-color&quot; role=&quot;button&quot;&gt;...&lt;/p&gt; is not clickable at point (885, 372). Other element would receive the click: &lt;div class=&quot;tab-pane fade show active pick-tabbing-page&quot; id=&quot;v-pills-pick3&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-pick3-tab&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=128.0.6613.113)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d1a6d9f34656b761592b4abbe0e44744, clickElement {id=f.70F8F78ED98221B955322633A32F9A23.d.895F8B4674207DC8FF02C6369DB405AE.e.51}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61883/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d1a6d9f34656b761592b4abbe0e44744)] -&gt; xpath: (//*[@class=&apos;purple-color&apos; and @role=&apos;button&apos;])[1]]
-Session ID: d1a6d9f34656b761592b4abbe0e44744
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at jackpot_POM.Home_Page.randomNumberfromTkt1(Home_Page.java:80)
-	at jackpot_test.TestClass_JA_1.SignInTest_and_Purchase_ticket(TestClass_JA_1.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>15</td>
-<td>jackpot_test.TestClass_JA_1@7d9f158f</td></tr>
-<tr>
 <td title='jackpot_test.TestClass_JA_2.Add_Credit()'><b>Add_Credit</b><br>Test class: jackpot_test.TestClass_JA_2<br/>
-<a href="#Output-673992821" onClick='toggleBox("Output-673992821", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-875413568" onClick='toggleBox("Output-875413568", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-673992821" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-673992821">
+<a href="#Output-875413568" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-875413568">
 Taking ScreenShot<br/>
-Saved ScreenShot atE:\TestScreenShot\Add_Credit_29.08.2024.16.16.51.png<br/>
+Saved ScreenShot atE:\TestScreenShot\Add_Credit_29.08.2024.19.19.57.png<br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fedf131598dcafe23e73379acae96ade, actions {actions=[org.openqa.selenium.interactions.Sequence@3be50b2c]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61931/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fedf131598dcafe23e73379acae96ade
+Command: [9bf76888e6d4cfd48869f63a96045179, actions {actions=[org.openqa.selenium.interactions.Sequence@c335b9]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58960}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58960/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bf76888e6d4cfd48869f63a96045179
 	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
 	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
 	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
@@ -447,9 +307,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fedf131598dcafe23e73379acae96ade, findElement {value=//*[@class=&apos;form-control w-auto&apos; and @placeholder=&apos;max 10,500&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61931/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fedf131598dcafe23e73379acae96ade
+Command: [9bf76888e6d4cfd48869f63a96045179, findElement {value=//*[@class=&apos;form-control w-auto&apos; and @placeholder=&apos;max 10,500&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58960}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58960/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bf76888e6d4cfd48869f63a96045179
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -469,14 +329,14 @@ Session ID: fedf131598dcafe23e73379acae96ade
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 64 more
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace673992821", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace673992821'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace875413568", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace875413568'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fedf131598dcafe23e73379acae96ade, actions {actions=[org.openqa.selenium.interactions.Sequence@3be50b2c]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61931/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fedf131598dcafe23e73379acae96ade
+Command: [9bf76888e6d4cfd48869f63a96045179, actions {actions=[org.openqa.selenium.interactions.Sequence@c335b9]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58960}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58960/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bf76888e6d4cfd48869f63a96045179
 	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
 	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
 	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
@@ -558,9 +418,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fedf131598dcafe23e73379acae96ade, findElement {value=//*[@class=&apos;form-control w-auto&apos; and @placeholder=&apos;max 10,500&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61931/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fedf131598dcafe23e73379acae96ade
+Command: [9bf76888e6d4cfd48869f63a96045179, findElement {value=//*[@class=&apos;form-control w-auto&apos; and @placeholder=&apos;max 10,500&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58960}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58960/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bf76888e6d4cfd48869f63a96045179
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -606,7 +466,7 @@ Date clicked Successfully<br/>
 Country Selected Successfully<br/>
 Clicked next Button Succcessfully<br/>
 Taking ScreenShot<br/>
-Saved ScreenShot atE:\TestScreenShot\Register_New_User_Self_29.08.2024.16.15.44.png<br/>
+Saved ScreenShot atE:\TestScreenShot\Register_New_User_Self_29.08.2024.19.18.43.png<br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[@class=&apos;mb-1 fs-lg fw-500 dark-text-color text-center&apos;]&quot;}
@@ -615,9 +475,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e11c2c183ded1a0636fdca6da9cf0d0b, findElement {value=//p[@class=&apos;mb-1 fs-lg fw-500 dark-text-color text-center&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60150}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60150/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e11c2c183ded1a0636fdca6da9cf0d0b
+Command: [e2a1c195a53366a1919e23f6e32217fa, findElement {value=//p[@class=&apos;mb-1 fs-lg fw-500 dark-text-color text-center&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49610}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49610/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2a1c195a53366a1919e23f6e32217fa
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -632,7 +492,7 @@ Session ID: e11c2c183ded1a0636fdca6da9cf0d0b
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-	at jackpot_POM.Register_UserPage.verify_OTP(Register_UserPage.java:114)
+	at jackpot_POM.Register_UserPage.verify_OTP(Register_UserPage.java:119)
 	at jackpot_test.TestClass_JA_1.Register_New_User_Self(TestClass_JA_1.java:145)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1475453406", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
@@ -642,9 +502,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e11c2c183ded1a0636fdca6da9cf0d0b, findElement {value=//p[@class=&apos;mb-1 fs-lg fw-500 dark-text-color text-center&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60150}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60150/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e11c2c183ded1a0636fdca6da9cf0d0b
+Command: [e2a1c195a53366a1919e23f6e32217fa, findElement {value=//p[@class=&apos;mb-1 fs-lg fw-500 dark-text-color text-center&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\vinton\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49610}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49610/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2a1c195a53366a1919e23f6e32217fa
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -662,7 +522,7 @@ Session ID: e11c2c183ded1a0636fdca6da9cf0d0b
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-	at jackpot_POM.Register_UserPage.verify_OTP(Register_UserPage.java:114)
+	at jackpot_POM.Register_UserPage.verify_OTP(Register_UserPage.java:119)
 	at jackpot_test.TestClass_JA_1.Register_New_User_Self(TestClass_JA_1.java:145)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -695,7 +555,7 @@ Session ID: e11c2c183ded1a0636fdca6da9cf0d0b
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>19</td>
+<td>20</td>
 <td>jackpot_test.TestClass_JA_1@7d9f158f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -707,16 +567,46 @@ Session ID: e11c2c183ded1a0636fdca6da9cf0d0b
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='jackpot_test.TestClass_JA_Admin_1.Ticket_Management_Verify_Tickets()'><b>Ticket_Management_Verify_Tickets</b><br>Test class: jackpot_test.TestClass_JA_Admin_1</td>
+<td></td>
+<td>0</td>
+<td>jackpot_test.TestClass_JA_Admin_1@5f9edf14</td></tr>
+<tr>
 <td title='jackpot_test.TestClass_JA_2.verify_UserWinningTicket()'><b>verify_UserWinningTicket</b><br>Test class: jackpot_test.TestClass_JA_2</td>
 <td></td>
-<td>24</td>
+<td>23</td>
 <td>jackpot_test.TestClass_JA_2@2bdd8394</td></tr>
 <tr>
-<td title='jackpot_test.TestClass_JA_2.UserProfle_UpdatePassword()'><b>UserProfle_UpdatePassword</b><br>Test class: jackpot_test.TestClass_JA_2<br/>
-<a href="#Output-6477484" onClick='toggleBox("Output-6477484", this, "Show output", "Hide output");'>Show output</a>
+<td title='jackpot_test.TestClass_JA_Admin_1.Admin_SignIN()'><b>Admin_SignIN</b><br>Test class: jackpot_test.TestClass_JA_Admin_1</td>
+<td></td>
+<td>0</td>
+<td>jackpot_test.TestClass_JA_Admin_1@5f9edf14</td></tr>
+<tr>
+<td title='jackpot_test.TestClass_JA_Admin_1.AddPlayer_PlayerManagement_andVerify()'><b>AddPlayer_PlayerManagement_andVerify</b><br>Test class: jackpot_test.TestClass_JA_Admin_1<br/>
+<a href="#Output-1660873155" onClick='toggleBox("Output-1660873155", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-6477484" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-6477484">
+<a href="#Output-1660873155" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1660873155">
+Clicked on Player Management<br/>
+Clicked on Add New Player<br/>
+Entered Player Name<br/>
+Entered User Email ID<br/>
+Entered User Mobile Number<br/>
+Enter User Password<br/>
+Entered Confirmed Password<br/>
+Clicked on Submit Button<br/>
+User Created Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>jackpot_test.TestClass_JA_Admin_1@5f9edf14</td></tr>
+<tr>
+<td title='jackpot_test.TestClass_JA_2.UserProfle_UpdatePassword()'><b>UserProfle_UpdatePassword</b><br>Test class: jackpot_test.TestClass_JA_2<br/>
+<a href="#Output-2096524537" onClick='toggleBox("Output-2096524537", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2096524537" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2096524537">
 User clikec<br/>
 User Entered UserEmail<br/>
 User Entered UserPassword<br/>

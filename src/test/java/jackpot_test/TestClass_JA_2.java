@@ -117,7 +117,7 @@ public class TestClass_JA_2 extends Base
 	public void User_Manage_Winnings_bankTransfer() throws InterruptedException, IOException
 	{
 		homepage.loginClick();
-		Reporter.log("User clikec",true);
+		Reporter.log("User clicked login button",true);
 		Utility.wait(1500);
 		loginpage.enterUserName(Utility.propertyFileData("Email"));
 		Reporter.log("User Entered UserEmail",true);
@@ -166,7 +166,7 @@ public class TestClass_JA_2 extends Base
 
 	}
 	
-	@Test
+	@Test()
 	public void UserProfle_UpdatePassword() throws InterruptedException, IOException
 	{
 		homepage.loginClick();

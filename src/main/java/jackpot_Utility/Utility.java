@@ -4,8 +4,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import org.openqa.selenium.io.FileHandler;
+import java.time.Duration;
 
+import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -202,6 +205,15 @@ public class Utility extends Base
 		alt.dismiss();
 	}
 	
+	public void ImplicitWait(WebDriver driver, long a)
+	{
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(a));
+	}
+	
+	public void ExplicitWait(WebDriver driver,long b)
+	{
+		
+	}
 	
 	
 	

@@ -15,14 +15,6 @@
           <include name="startLogger"/>
         </methods>
       </class> <!-- jackpot_test.TestClass_JA_1 -->
-      <class name="jackpot_test.TestClass_JA_Admin_1">
-        <methods>
-          <include name="afterTest"/>
-          <include name="AddPlayer_PlayerManagement_andVerify"/>
-          <include name="startProcess"/>
-          <include name="startLogger"/>
-        </methods>
-      </class> <!-- jackpot_test.TestClass_JA_Admin_1 -->
       <class name="jackpot_test.TestClass_JA_2">
         <methods>
           <include name="Add_Credit"/>
